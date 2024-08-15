@@ -1,0 +1,16 @@
+.projects {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  
+  .projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .projects ul li {
+    margin: 10px 0;
+  }
+  
