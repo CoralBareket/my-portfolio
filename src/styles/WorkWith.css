@@ -1,0 +1,60 @@
+.work-with {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .work-with h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+  .icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+  }
+  
+  .icon p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* Icon Colors */
+  .icon .java {
+    color: #007396;
+  }
+  
+  .icon .javascript {
+    color: #F7DF1E;
+  }
+  
+  .icon .python {
+    color: #3776AB;
+  }
+  
+  .icon .react {
+    color: #61DAFB;
+  }
+  
+  .icon .nodejs {
+    color: #339933;
+  }
+  
+  .icon .socketio {
+    color: #010101;
+  }
+  
+  .icon .mysql {
+    color: #4479A1;
+  }
+  

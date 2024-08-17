@@ -1,19 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import projects from '../data/projects';
 import '../styles/Projects.css';
 
 function Projects() {
   return (
     <section className="projects">
-      <h2>My Projects</h2>
-      <ul>
+      <h2 className="section-title">My Projects</h2>
+      <div className="projects-grid">
         {projects.map(project => (
-          <li key={project.id}>
-            <Link to={`/projects/${project.id}`}>{project.title}</Link>
-          </li>
+          <div key={project.id} className="project-card">
+            <img src={project.image} alt={project.title} className="project-image" />
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">Know More</a>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
