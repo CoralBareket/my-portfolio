@@ -1,18 +1,22 @@
+import memoryGameImage from '../assets/images/memoryGame.png';
+import onlineCodingImage from '../assets/images/onlineCoding.png';
+
 const projects = [
-    {
-      id: '1',
-      title: 'Memory Game',
-      description: 'A fun and interactive memory game built with HTML, CSS, and JavaScript.',
-      link: 'https://github.com/CoralBareket/Memory-game'
-    },
-    {
-      id: '2',
-      title: 'Online Coding Site',
-      description: 'The Online Coding Site is an interactive platform designed to help users learn and practice coding in a variety of programming languages.\n This web application offers a user-friendly interface where beginners and experienced programmers alike can engage with coding challenges, tutorials, and collaborative projects.',
-      link: 'https://github.com/CoralBareket/online-coding-webapp'
-    }
-    // Add more projects as needed
-  ];
-  
-  export default projects;
-  
+  {
+    id: 1,
+    title: 'Memory Game',
+    description: 'A classic memory game built with JavaScript, HTML, and CSS.',
+    link: 'https://github.com/CoralBareket/Memory-game',
+    image: memoryGameImage,
+  },
+  {
+    id: 2,
+    title: 'Online Coding Site',
+    description: 'An interactive coding site for learning and practicing programming.',
+    link: 'https://github.com/CoralBareket/online-coding-webapp',
+    image: onlineCodingImage,  // Use the single image property
+  },
+  // Add more projects as needed
+];
+
+export default projects;
