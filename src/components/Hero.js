@@ -9,7 +9,7 @@ function Hero() {
         <p>Full-stack developer passionate about coding and always eager to learn and create</p>
       </div>
       <div className="hero-image">
-        <img src="path_to_your_image.jpg" alt="Coral Bareket" />
+         {/* <img src="path_to_your_image.jpg" alt="Coral Bareket" /> */}
       </div>
     </section>
   );
