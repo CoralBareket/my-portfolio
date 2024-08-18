@@ -13,13 +13,14 @@ function useContactForm() {
     e.preventDefault();
 
     // Sending the email using EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', { message }, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log('Email successfully sent!', result.text);
-        setIsSubmitted(true);  // Mark the form as submitted
-      }, (error) => {
-        console.log('Failed to send the email. Please try again.', error.text);
-      });
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    .then((result) => {
+      console.log('Email successfully sent!', result.text);
+      setMessageSent(true);
+      toggleForm(); // Hide form after sending the message
+    }).catch((error) => {
+      console.log('Failed to send the email. Please try again.', error);
+    });  
   };
 
   return {
