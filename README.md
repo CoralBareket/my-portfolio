@@ -9,6 +9,10 @@ This is the source code for my personal portfolio site, built using React.
 - **State Management**: Using React's state and hooks.
 - **Responsive Design**: The site is fully responsive and works on all screen sizes.
 
+**Live Demo:** [Click here to view the project]
+
+   (https://spectacular-pothos-e4b86e.netlify.app/)
+
 ## How to Run Locally
 
 1. Clone this repository:
