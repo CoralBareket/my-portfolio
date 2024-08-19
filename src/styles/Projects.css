@@ -3,6 +3,10 @@
   padding: 50px 20px;
   background-color: #ffffff;
   text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .projects-grid {

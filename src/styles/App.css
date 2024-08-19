@@ -3,11 +3,18 @@
 /* Global Styles */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f4f4f4;
+  background-color: white;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   transition: background-color 0.5s ease-in-out;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --background-color: black;
+  --text-color: #e0e0e0;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 h1, h2 {

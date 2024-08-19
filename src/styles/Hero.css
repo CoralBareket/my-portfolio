@@ -7,6 +7,8 @@
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   height: 60vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .hero-content {
@@ -15,13 +17,14 @@
 
 .hero h1 {
   font-size: 3rem;
-  font-weight: 700; /* Bold for the heading */
+  font-weight: 700;
   color: black;
+  color: var(--text-color);
 }
 
 .hero p {
   font-size: 1.25rem;
-  font-weight: 400; /* Regular weight for the paragraph */
+  font-weight: 400;
   color: rgb(148, 148, 148);
   margin-bottom: 20px;
 }

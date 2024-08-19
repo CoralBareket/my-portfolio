@@ -3,6 +3,8 @@ header {
   align-items: center;
   background-color: white; 
   padding: 20px 40px;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 nav {
@@ -28,6 +30,16 @@ nav ul li:hover {
 nav ul li a {
   color: grey;
   text-decoration: none;
+}
+
+header .toggle-button{
+  font-size: 0.85rem;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 header .cta-button {
