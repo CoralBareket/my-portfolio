@@ -8,9 +8,16 @@ function Header() {
 
   return (
     <header>
-      <button className="toggle-button" onClick={toggleMode}>
-        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
+      <div className="toggle-button">
+        <label className="switch">
+          <input 
+            type="checkbox" 
+            checked={isDarkMode} 
+            onChange={toggleMode} 
+          />
+          <span className="slider round"></span>
+        </label>
+      </div>
       <nav>
         <ul>
           <li>
