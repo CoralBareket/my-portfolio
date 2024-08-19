@@ -33,12 +33,10 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Toggle button */
 .toggle-button {
   margin-right: 20px;
 }
 
-/* Toggle button switch style */
 .switch {
   position: relative;
   display: inline-block;
@@ -134,16 +132,15 @@ header .cta-button:active {
   transform: scale(1); /* Return to normal size when clicked */
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
   header {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     max-width: 100%;
   }
 
   nav {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -163,9 +160,15 @@ header .cta-button:active {
 
   header .cta-button {
     margin: 10px 0 0 0;
-    width: 100%;
+    width: auto;
     height: auto;
     text-align: center;
     padding: 15px 20px;
   }
+
+  header .toggle-button {
+    align-self: flex-start;
+    margin: 10px 0;
+  }
+
 }
