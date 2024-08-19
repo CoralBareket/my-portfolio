@@ -112,20 +112,26 @@ input:checked + .slider {
   background-color: #333;
 }
 
-/* CTA button styling */
 header .cta-button {
-  margin-left: 60px; /* Add space between nav and button */
+  margin-left: 60px; /* Space between nav and button */
   background-color: #6c63ff;
-  font-size: 0.85rem;
+  font-size: 1rem; 
   color: #fff;
   padding: 15px 40px;
-  border-radius: 5px;
+  border-radius: 10px; 
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 header .cta-button:hover {
   background-color: #5848c2;
+  transform: scale(1.05);
+}
+
+header .cta-button:active {
+  transform: scale(1); /* Return to normal size when clicked */
 }
 
 /* Responsive styling */
@@ -140,6 +146,7 @@ header .cta-button:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -155,8 +162,10 @@ header .cta-button:hover {
   }
 
   header .cta-button {
-    margin: 20px 0 0 0;
-    width: 10px;
-    height: 30px;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 15px 20px;
   }
 }
