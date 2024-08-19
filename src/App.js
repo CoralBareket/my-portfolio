@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router>
-      <Header toggleDarkMode={toggleDarkMode} /> {/* Pass the toggle function as a prop */}
+      <Header toggleDarkMode={toggleDarkMode} />
       <Hero />
       <About />
       <Projects />

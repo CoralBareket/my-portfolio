@@ -1,12 +1,13 @@
+/* Basic styling for header */
 header {
   display: flex;
   align-items: center;
-  background-color: white; 
   padding: 20px 40px;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
+/* Styling for navigation */
 nav {
   margin-left: auto; /* Ensures the nav is pushed to the left */
 }
@@ -32,16 +33,86 @@ nav ul li a {
   text-decoration: none;
 }
 
-header .toggle-button{
-  font-size: 0.85rem;
-  color: #fff;
-  padding: 10px 10px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-  background-color: var(--background-color);
-  color: var(--text-color);
+/* Toggle button */
+.toggle-button {
+  margin-right: 20px;
 }
 
+/* Toggle button switch style */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(247, 242, 242);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "☀️"; /* Sun icon */
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: lightyellow;
+  transition: 0.4s;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.slider:after {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  right: 4px;
+  bottom: 4px;
+  background-color: #4b6cb7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* When checked, move the slider to the right */
+input:checked + .slider:before {
+  transform: translateX(26px);
+  content: "🌙"; /* Switch to moon icon */
+  background-color: #4b6cb7;
+}
+
+input:checked + .slider:after {
+  opacity: 1;
+  transform: translateX(-26px);
+}
+
+/* Change background when checked */
+input:checked + .slider {
+  background-color: #333;
+}
+
+/* CTA button styling */
 header .cta-button {
   margin-left: 60px; /* Add space between nav and button */
   background-color: #6c63ff;
@@ -57,30 +128,35 @@ header .cta-button:hover {
   background-color: #5848c2;
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 20px;
+    max-width: 100%;
   }
 
   nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* Add space below nav */
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   nav ul li {
     margin: 10px 0;
+    padding: 0 10px;
   }
 
   header .cta-button {
     margin: 20px 0 0 0;
+    width: 10px;
+    height: 30px;
   }
 }
