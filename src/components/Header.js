@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import useDarkMode from '../hooks/useDarkMode';
 import '../styles/Header.css';
 
 function Header() {
+  const [isDarkMode, toggleMode] = useDarkMode();
+
   return (
     <header>
+      <button className="toggle-button" onClick={toggleMode}>
+        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+      </button>
       <nav>
         <ul>
           <li>

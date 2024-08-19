@@ -4,14 +4,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.contact-section {
+.contact {
+  font-size: 1.5rem;
   padding: 60px 20px;
   text-align: center;
   background-color: #ffffff;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .contact-section h2 {
-  font-size: 2.5rem;
   color: #000;
   margin-bottom: 30px;
 }

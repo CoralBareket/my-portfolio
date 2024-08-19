@@ -8,6 +8,8 @@ footer {
   background-color: white;
   text-align: center;
   padding: 20px 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 footer p a {
