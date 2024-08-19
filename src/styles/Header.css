@@ -48,7 +48,15 @@ header .cta-button:hover {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add space below nav */
   }
 
   nav ul {
@@ -58,5 +66,9 @@ header .cta-button:hover {
 
   nav ul li {
     margin: 10px 0;
+  }
+
+  header .cta-button {
+    margin: 20px 0 0 0;
   }
 }
