@@ -95,7 +95,7 @@ nav ul li a {
 input:checked + .slider:before {
   transform: translateX(26px);
   content: "🌙"; /* Switch to moon icon */
-  background-color: gray;
+  background-color: #333;
 }
 
 input:checked + .slider:after {
